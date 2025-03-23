@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 70px;
+    font-size: 24px;
+}
+
+.main {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1e1e1e;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #444;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+textarea {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e;
+    color: #ffffff;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 19px;
+    resize: none;
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #61dafb;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    overflow: auto;
+}
+
+#output {
+    flex-grow: 1;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    color: lime;
+    overflow: auto;
+}
